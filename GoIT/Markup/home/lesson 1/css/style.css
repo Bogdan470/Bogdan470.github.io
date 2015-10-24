@@ -1,0 +1,80 @@
+*{
+margin: 0;
+padding: 0;
+}
+body{
+   width: 1440px;
+   height: 806px;
+   background:url(../image/BG.png) #eeeeee;
+   border-bottom: 2px solid black;
+}
+.wrapper{
+    width: 516px;
+    height: 754px;
+    background:url(../image/Bg_blank.png) #ffffff;
+    margin: 4px auto;
+    -webkit-box-shadow: 0px 0px 8px -1px rgba(171,171,171,1);
+    -moz-box-shadow: 0px 0px 8px -1px rgba(171,171,171,1);
+    box-shadow: 0px 0px 8px -1px rgba(171,171,171,1);
+}
+hr{
+    border-bottom: 0.5px solid #7a7a7a;
+    width: 414px; 
+    margin: 0px auto;
+}
+h3{
+    padding-bottom: 20px;
+}
+.my_foto{
+    padding-bottom: 8px;
+}
+/*--Header--*/
+.header{
+    text-align: center;
+    padding-top: 46px;
+}
+.indent{
+    padding-bottom: 18px;
+}
+/*--/Header--*/
+
+/*--Content--*/
+.content >p, .content >ul li {
+    margin-left: 60px;
+}
+.text_because{
+    padding-top:25px;
+}
+.indent_list {
+    padding-top: 20px;
+    padding-bottom: 13px;
+    margin-left: 25px;
+}
+.indent_list li {
+   line-height: 1.8;
+}
+.text_my_fon{
+    padding-top: 25px;
+    padding-bottom: 6px;
+}
+.my_profile{
+    padding-top: 32px;  
+    padding-bottom: 5px;
+}
+a{
+    color:#0000ee;
+}
+/*--/Content--*/
+/*--Footer--*/
+.footer >p{
+    margin-left: 60px;
+}
+.footer{
+    padding-top: 17px;
+}
+.my_feedback{
+    padding-top: 25px;
+    padding-bottom: 7px;
+}
+/*--/Footer--*/
+
