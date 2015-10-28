@@ -41,12 +41,20 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5d5d5d', end
 .menu li:nth-child(2){
     border-right:1px solid #838383;
 }
-.menu a{
+.menu a:not(.first_link_menu){
     display: block;
     color: #ffffff;
     line-height: 40px;
     text-decoration: none;
     padding: 0px 43px;
+    font-size: 11pt; 
+}
+.first_link_menu{
+   display: block;
+    color: #ffffff;
+    line-height: 40px;
+    text-decoration: none;
+    padding: 0px 43px 0px 25px;
     font-size: 11pt; 
 }
 .menu a:hover{
