@@ -1,0 +1,198 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: url(../image/bg.png);
+    font-family: Open Sans, sans-serif;
+}
+.wraper{
+   width: 1000px; 
+    margin: 38px auto 7px auto;
+    background: #fff;
+    box-shadow: -webkit-box-shadow: 0px 3px 5px 1px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 3px 5px 1px rgba(0,0,0,0.75);
+box-shadow: 0px 3px 5px 1px rgba(0,0,0,0.75);
+}
+
+/* Header */
+.header_up{
+    background:#ffffff;
+    padding: 12px 30px 0px 26px; 
+     position: relative;
+    overflow: hidden;
+}
+span{
+    display: block;
+}
+.letter_spac{
+    letter-spacing: 0.7px;
+}
+.img_logo{
+    line-height: 0;
+    float: left; 
+}
+.kontakti{
+    float:right;
+    color: #5fa5bb;
+    width:36.9%;  
+    position: relative;
+}
+.text_kontakt{
+    float:right; 
+     font-size: 12px;
+}
+ul li a span{
+    letter-spacing: 0px;
+}
+.header_menu_flag {
+    clear: right;
+} 
+.header_menu_flag li{
+    float: left;
+    list-style: none;
+    text-align: center;
+    font-size: 10px;
+    margin-top: 28px;
+}
+li img{
+    margin: 0px 8px;  
+}
+li img:hover{
+     border-radius: 100px;
+   -webkit-box-shadow: 0px 0px 32px 2px rgba(250,250,8,0.9);
+-moz-box-shadow: 0px 0px 32px 2px rgba(250,250,8,0.9);
+box-shadow: 0px 0px 32px 2px rgba(250,250,8,0.9);
+   
+}
+li a{
+    color: #128aa7;
+}
+.header_center{
+    border-top: 1px solid #128aa7;
+    border-bottom:1px solid #128aa7;
+    line-height: 0px;
+}
+.header_menu{
+    border-bottom: 1px solid #000;
+}
+.nav_menu{
+    text-align: center;
+    position: relative;
+    background:rgba(55,55,55,1);
+background: -moz-linear-gradient(top, rgba(55,55,55,1) 0%, rgba(48,48,48,1) 100%);
+background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(55,55,55,1)), color-stop(100%, rgba(48,48,48,1)));
+background: -webkit-linear-gradient(top, rgba(55,55,55,1) 0%, rgba(48,48,48,1) 100%);
+background: -o-linear-gradient(top, rgba(55,55,55,1) 0%, rgba(48,48,48,1) 100%);
+background: -ms-linear-gradient(top, rgba(55,55,55,1) 0%, rgba(48,48,48,1) 100%);
+background: linear-gradient(to bottom, rgba(55,55,55,1) 0%, rgba(48,48,48,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#373737', endColorstr='#303030', GradientType=0 );;
+     border-top: 1px solid #cacbcb;
+     box-shadow: -webkit-box-shadow: 0px 3px 4px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 3px 4px 0px rgba(0,0,0,0.75);
+box-shadow: 0px 3px 4px 0px rgba(0,0,0,0.75);
+}
+small{
+   font-size: 8px; 
+}
+.nav_menu li{
+   display: inline-block;
+    list-style: none;
+    line-height: 28px; 
+    position: relative;
+}
+.nav_menu a{
+    display: block;
+    text-decoration: none;
+    font-size: 14px;
+    color: #ffffff;
+    padding: 0px 30px;
+}
+
+/* drop-down menu */
+.nav_menu ul{
+	list-style:none;
+	position:absolute;
+	left:0px;
+    opacity:0;
+    
+}
+.nav_menu ul li{
+	padding-top:1px; 
+	float:none;
+	background:#303030;
+    box-shadow: -webkit-box-shadow: 0px 5px 8px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 5px 8px 0px rgba(0,0,0,0.75);
+box-shadow: 0px 5px 8px 0px rgba(0,0,0,0.75); 
+}
+.nav_menu ul a{
+    padding-left:3px;
+}
+.nav_menu ul a{
+	white-space:nowrap; 
+	display:block;
+    width: 118px;
+}
+.nav_menu li:hover a{ 
+	text-decoration:none;
+}
+.nav_menu li:hover ul{ /* Выводим выпадающий пункт при наведении курсора */
+	left:0;
+	opacity:1; 
+}
+.nav_menu li:hover ul a{ 
+	text-decoration:none;
+	-webkit-transition:-webkit-transform 0.075s linear;
+}
+.nav_menu li:hover ul li a:hover{ 
+	text-decoration:underline;
+	-moz-transform:scale(1.05);
+	-webkit-transform:scale(1.05);
+}
+/* /drop-down menu */
+/* /Header */
+/* Content */
+.content{
+    background:url(../image/content.png) repeat-y;
+}
+.clearfix:after{
+    content:"";
+    clear: both;
+    display: block;
+}
+.left_info{
+    float: left;
+    width: 20.7%;
+    background: #edeef0;
+}
+.center_info{
+      float: left;
+    width: 49%;
+}
+.right_info{
+    float: right;
+    width: 20.8%;
+    background: #edeef0;
+}
+.information{
+    text-align: center;
+    font-size:18px;
+    color: #424c43;
+    font-weight: bold;
+    margin-top: 8px;
+}
+.text_information{
+     padding: 2px 18px 8px 16px;
+    color:#7d837f;
+    font-size: 13px;
+    line-height: 1.8;
+}
+/* /Content */
+
+/* Footer */
+.footer{
+    text-align: center;
+    color: #dee7ee;
+    font-size: 12px;
+}
+/* /Footer */
