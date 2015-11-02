@@ -9,7 +9,7 @@ body{
 }
 .wraper{
     width: 960px;
-    padding: 50px 50px 0px 50px;
+    padding: 50px 50px 60px 50px;
      margin: 0 auto;
     background: #ffffff;
     -webkit-box-shadow: 0px 0px 8px -1px rgba(171,171,171,1);
@@ -31,7 +31,6 @@ background: -webkit-linear-gradient(top, rgba(93,93,93,1) 0%, rgba(69,68,68,1) 1
 background: -o-linear-gradient(top, rgba(93,93,93,1) 0%, rgba(69,68,68,1) 100%);
 background: -ms-linear-gradient(top, rgba(93,93,93,1) 0%, rgba(69,68,68,1) 100%);
 background: linear-gradient(to bottom, rgba(93,93,93,1) 0%, rgba(69,68,68,1) 100%);
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5d5d5d', endColorstr='#454444', GradientType=0 );
 }
 .menu li{
     list-style: none;
@@ -65,7 +64,6 @@ background: -webkit-linear-gradient(top, rgba(73,73,73,1) 0%, rgba(48,48,48,1) 1
 background: -o-linear-gradient(top, rgba(73,73,73,1) 0%, rgba(48,48,48,1) 100%);
 background: -ms-linear-gradient(top, rgba(73,73,73,1) 0%, rgba(48,48,48,1) 100%);
 background: linear-gradient(to bottom, rgba(73,73,73,1) 0%, rgba(48,48,48,1) 100%);
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#494949', endColorstr='#303030', GradientType=0 );
 }
 /* /Header */
 
@@ -120,17 +118,16 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#494949', end
 
 /* Footer */
 .footer{
-   padding:20px 0px;  
-}
-.footer_menu{
-    position: relative;
-    overflow: hidden;
     background: #e1e1e1;
+    line-height: 40px;
+}
+.footer_nav{
+   float: left; 
+    width: 80.6%;
 }
 .footer_menu li{
     float: left;
     list-style: none;
-    line-height: 40px;
 }
 .footer_menu a{
     display: block;
@@ -139,13 +136,18 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#494949', end
     color: #2c2c2c;
     padding: 0px 65px 0px 25px;
 }
-.footer_menu li:last-child{
-    float: right;
-    padding-right: 20px;
-    font-size: 10pt;
-    color: #2c2c2c;
-}
 .footer_menu a:hover{
     text-decoration: underline;
 }
+.copyright{
+    float: left;
+    font-size: 10pt;
+    color: #2c2c2c;
+}
+.clearfix:after{
+    content:'';
+    clear: both;
+    display: block;
+}
+
 /* /Footer */
