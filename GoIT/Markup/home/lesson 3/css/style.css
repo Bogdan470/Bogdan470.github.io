@@ -6,7 +6,7 @@ body{
     background-color: #0c739f;
 	background-image: url('../image/bg.png');
 	background-repeat: repeat-x;
-    font-family: Open Sans, sans-serif;
+    font-family: Open Sans, Arial sans-serif;
 }
 .wraper{
    width: 1000px; 
@@ -21,8 +21,6 @@ box-shadow: 0px 3px 5px 1px rgba(0,0,0,0.75);
 .header_up{
     background:#ffffff;
     padding: 12px 30px 0px 26px; 
-     position: relative;
-    overflow: hidden;
 }
 span{
     display: block;
@@ -38,7 +36,6 @@ span{
     float:right;
     color: #5fa5bb;
     width:36.9%;  
-    position: relative;
 }
 .text_kontakt{
     float:right; 
@@ -61,8 +58,8 @@ li img{
     margin: 0px 8px;  
 }
 li img:hover{
-     border-radius: 100px;
-   box-shadow: -webkit-box-shadow: 0px 0px 16px -1px rgba(6,115,125,1);
+    border-radius: 100px;
+    box-shadow: -webkit-box-shadow: 0px 0px 16px -1px rgba(6,115,125,1);
 -moz-box-shadow: 0px 0px 16px -1px rgba(6,115,125,1);
 box-shadow: 0px 0px 16px -1px rgba(6,115,125,1);
 }
@@ -80,16 +77,9 @@ li a{
 }
 .nav_menu{
     text-align: center;
-    background:rgba(55,55,55,1);
-background: -moz-linear-gradient(top, rgba(55,55,55,1) 0%, rgba(48,48,48,1) 100%);
-background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(55,55,55,1)), color-stop(100%, rgba(48,48,48,1)));
-background: -webkit-linear-gradient(top, rgba(55,55,55,1) 0%, rgba(48,48,48,1) 100%);
-background: -o-linear-gradient(top, rgba(55,55,55,1) 0%, rgba(48,48,48,1) 100%);
-background: -ms-linear-gradient(top, rgba(55,55,55,1) 0%, rgba(48,48,48,1) 100%);
-background: linear-gradient(to bottom, rgba(55,55,55,1) 0%, rgba(48,48,48,1) 100%);
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#373737', endColorstr='#303030', GradientType=0 );;
-     border-top: 1px solid #cacbcb;
-     box-shadow: -webkit-box-shadow: 0px 3px 4px 0px rgba(0,0,0,0.75);
+    background:#373737;
+    border-top: 1px solid #cacbcb;
+    box-shadow: -webkit-box-shadow: 0px 3px 4px 0px rgba(0,0,0,0.75);
 -moz-box-shadow: 0px 3px 4px 0px rgba(0,0,0,0.75);
 box-shadow: 0px 3px 4px 0px rgba(0,0,0,0.75);
 }
@@ -97,7 +87,7 @@ small{
    font-size: 8px; 
 }
 .nav_menu li{
-   display: inline-block;
+    display: inline-block;
     list-style: none;
     line-height: 28px; 
     position: relative;
