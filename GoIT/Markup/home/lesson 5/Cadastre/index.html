@@ -27,8 +27,12 @@
         <div class="panel_regist clearfix">
          <form action="#">
           <p class="text_up_form">Cadastre-se</p>
-          <button type="button" class="button_facebook">
-          <img src="image/facebook.png" alt="" ><b>Log In</b> whith <b>facebook</b> &nbsp; <big>&rsaquo;</big></button>
+          <button type="button" class="button_facebook clearfix">
+          <ul>
+              <li><big>f</big></li>
+              <li><b>Log In</b> whith <b>facebook</b> &nbsp; <big>&rsaquo;</big></li>
+          </ul>
+          </button>
           <div class="ou clearfix">
              <ul>
                  <li class="left_ou"></li>
@@ -38,18 +42,18 @@
            </div>
            <div class="form_list">
              <ul>
-                 <li><input type="text" placeholder="First name" name="First name"></li> 
-                 <li><input type="text" placeholder="Last name" name="Last name"></li>
-                 <li><input type="text" placeholder="Email Address" name="Email Address"></li>
-                 <li><input type="password" name="Choose Password" placeholder="Choose Password"></li>
-                 <li><input type="text" name="Password Confirm" placeholder="Password Confirm"></li>
+                 <li><input type="text" placeholder="First name" name="First name" required></li> 
+                 <li><input type="text" placeholder="Last name" name="Last name" required></li>
+                 <li><input type="text" placeholder="Email Address" name="Email Address" required></li>
+                 <li><input type="password" name="Choose Password" placeholder="Choose Password" required></li>
+                 <li><input type="password" name="Password Confirm" placeholder="Password Confirm" required></li>
              </ul>
            </div>
            <div class="check_box">
-             <input type="checkbox" name="checkbox"><span class="checkbox_text">&nbsp; Send me Youbike updates and tips</span>
+             <input type="checkbox" name="checkbox" required><span class="checkbox_text">&nbsp; Send me Youbike updates and tips</span>
            </div>
             <div class="submit_button">
-                 <button type="submit">Create my Account</button>
+                 <button type="submit" value="Create my Account" method="post">Create my Account</button>
             </div>
          </form>
         <p class="text_bottom">By clicking the button above, you agree to the Terms of Service Xiew our Privacy Policy.</p>

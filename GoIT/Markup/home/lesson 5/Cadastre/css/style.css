@@ -18,8 +18,8 @@ body{
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size:100% 100%;
-   
     font-family: "Helvetica neuecyr light",Arial;
+    font-size: 14px;
 }
 .wraper{
    margin: 0px auto;
@@ -36,7 +36,6 @@ li{
 }
 a{
     color: #fefefe;
-    font-size: 14px;
     text-decoration: none;
     letter-spacing: 0.3px;
 }
@@ -45,18 +44,14 @@ a{
 .menu{
     background:#074f8d;
     position: relative;
-    
 }
 .right_menu{
     margin-right: 20px;
-    
 }
 .menu li{
     float: right;
-    line-height: 14px;
-    line-height: 32px;
+    line-height: 36px;
     padding:0px 13px;
-     margin: 2px 0px 2px 0px;
 }
 .menu li a{
     display: block;
@@ -123,15 +118,27 @@ button{
     width: 278px;
     border-radius: 5px;
 }
-button img{
-    padding: 0px 30px 0px 0px;
-    margin-left: -20px;
-    vertical-align:middle;
+.button_facebook:active{
+    background: #2a3d6d;
+   
+}
+.button_facebook ul li{
+    float: left; 
+}
+.button_facebook ul li:first-child{
+    margin-left: 15px;
+    font-size: 25px;
+    font-weight: 600;
+    padding-right: 15px;
+    border-right: 1px solid #1d3c73;  
+}
+.button_facebook ul li:last-child{
+    padding-left: 20px;
+    border-left: 1px solid #4c68a2; 
 }
 .ou ul li{
     float: left;
     padding: 0px 5px;
-    font-size: 14px;
     color: #999999;  
 }
 .ou ul{
@@ -155,7 +162,6 @@ button img{
     line-height: 32px;
     margin-bottom: 16px;
     width: 260px;
-    font-size: 14px; 
 }
 .form_list ul li input{
     background: #0f0e0e;
@@ -182,7 +188,6 @@ box-shadow: 0px 0px 15px 3px rgba(70,130,172,1);
     margin-top: 4px;
 }
 .checkbox_text{
-    font-size: 14px;
     color: #b1b0ad;
 }
 .submit_button button{
@@ -192,7 +197,6 @@ box-shadow: 0px 0px 15px 3px rgba(70,130,172,1);
     color:white;
     border-bottom: 1px solid #1b5288;
     border-top: 1px solid #67c6e6;
-    font-size: 14px;
     margin-top: 20px;
 }
 .submit_button button:hover{
