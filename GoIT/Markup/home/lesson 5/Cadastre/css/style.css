@@ -3,12 +3,12 @@ margin: 0;
 padding: 0;
 }
 @font-face {
-    font-family: 'Helvetica neuecyr light';
-    src: url('fonts/helveticaneuecyr-light-webfont.eot');
-    src: url('fonts/helveticaneuecyr-light-webfont.eot?#iefix') format('embedded-opentype'),
-         url('fonts/helveticaneuecyr-light-webfont.woff2') format('woff2'),
-         url('fonts/helveticaneuecyr-light-webfont.woff') format('woff'),
-         url('fonts/helveticaneuecyr-light-webfont.ttf') format('truetype');
+    font-family: 'Helvetica Neue';
+    src: url('../fonts/helveticaneue-thin-webfont.eot');
+    src: url('../fonts/helveticaneue-thin-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/helveticaneue-thin-webfont.woff2') format('woff2'),
+         url('../fonts/helveticaneue-thin-webfont.woff') format('woff'),
+         url('../fonts/helveticaneue-thin-webfont.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
@@ -43,10 +43,9 @@ a{
 /* Top Menu */
 .menu{
     background:#074f8d;
-    position: relative;
 }
-.right_menu{
-    margin-right: 20px;
+.nav{
+   margin-right: 20px;
 }
 .menu li{
     float: right;
@@ -56,22 +55,38 @@ a{
 .menu li a{
     display: block;
 }
-.left_menu .bord{
-    border-right: 1px solid #56a2dc;
+.right_menu li:nth-child(2){
+    position: relative;
 }
-.right_menu li img{
-    vertical-align: middle;
-    padding: 0px 10px 0px 6px;   
+.left_menu li:nth-child(1){
+    position: relative;
 }
-.left_menu li a{
-    color: #60b5ed;  
+.left_menu li:nth-child(1):before{
+    content:" ";
+    position:absolute;
+    border-right:1px solid #56a2dc;
+    height: 30px;
+ left: 66px;
+    top: 3px;
+}
+.right_menu li:nth-child(2):after{
+    content: url(..//image/Flag.png); 
+  position: absolute;
+    top: 6px;
+    left:-12px;
+}
+.left_menu a{
+    color: #60b5ed; 
+}
+.left_menu li:nth-child(1){
+    margin-right: 30px;
 }
 .left_menu li:hover,
 .left_menu li:hover a{
     background: #60b5ed;
     color:#fff;
 }
-.right_menu li:hover{
+.right_menu li:first-child{
 background: rgba(79,175,219,1);
 background: -moz-linear-gradient(top, rgba(79,175,219,1) 0%, rgba(46,121,196,1) 100%);
 background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(79,175,219,1)), color-stop(100%, rgba(46,121,196,1)));
@@ -80,9 +95,11 @@ background: -o-linear-gradient(top, rgba(79,175,219,1) 0%, rgba(46,121,196,1) 10
 background: -ms-linear-gradient(top, rgba(79,175,219,1) 0%, rgba(46,121,196,1) 100%);
 background: linear-gradient(to bottom, rgba(79,175,219,1) 0%, rgba(46,121,196,1) 100%);
 }
-.right_menu li:hover span{
+.right_menu li:hover:nth-child(2),
+.right_menu span{
     text-decoration:underline;
 }
+
 /* /Top Menu */
 
 /*form*/
@@ -120,10 +137,10 @@ button{
 }
 .button_facebook:active{
     background: #2a3d6d;
-   
 }
 .button_facebook ul li{
     float: left; 
+    display: block;
 }
 .button_facebook ul li:first-child{
     margin-left: 15px;
@@ -136,28 +153,32 @@ button{
     padding-left: 20px;
     border-left: 1px solid #4c68a2; 
 }
-.ou ul li{
-    float: left;
-    padding: 0px 5px;
-    color: #999999;  
+/*----OU-----*/
+.ou{
+    position: relative;
+    text-align: center;
+    margin-bottom: 30px;
+     margin-top: 28px;
 }
-.ou ul{
-  display: inline-block;
-    margin-top: 24px;
-    padding-bottom: 20px
+.ou span {
+      color: #999999;
 }
-.left_ou{
-    border-top: 1px solid gray; 
-    border-bottom: 1px solid black;
-    width: 112px;
-    margin-top: 7px;
+.ou span:before,
+.ou span:after{
+    content: " ";
+    position:absolute;
+    width: 124px;
+    border-top: 1px solid #666666;
+    border-bottom: 1px solid #000;
+    margin-top: .6em;
 }
-.right_ou{
-   border-top: 1px solid gray; 
-   border-bottom: 1px solid black; 
-   width: 112px;
-   margin-top: 7px;
+.ou span:before{
+     margin-left:-128px;
 }
+.ou span:after{
+      margin-left: 4px;
+}
+  /*----/OU-----*/
 .form_list ul li input{
     line-height: 32px;
     margin-bottom: 16px;
