@@ -45,7 +45,8 @@ a{
     background:#074f8d;
 }
 .nav{
-   margin-right: 20px;
+    width: 1124px;
+    margin: 0;
 }
 .menu li{
     float: right;
