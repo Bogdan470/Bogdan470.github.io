@@ -17,7 +17,7 @@ body{
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-size:100% 100%;
+    background-size:cover;
     font-family: "Helvetica neuecyr light",Arial;
     font-size: 14px;
 }
@@ -46,7 +46,7 @@ a{
 }
 .nav{
     width: 1124px;
-    margin: 0;
+    margin: 0 auto;
 }
 .menu li{
     float: right;
@@ -130,6 +130,11 @@ button{
     width: 278px;
     border-radius: 5px;
     border-top: 1px solid #7889b7;
+}
+.button_facebook li:nth-child(2):after{
+    content: ">";
+    margin-left: 8px;
+    font-weight: bold;
 }
 .button_facebook:hover{
     background: #3d5498;
