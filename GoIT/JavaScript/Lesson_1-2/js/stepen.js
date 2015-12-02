@@ -13,5 +13,5 @@ if (stepen <= 1) {
     ' не верный формат...степень должна быть больше 1'
   );
 } else {
-  alert( pow(chislo, stepen) );
+  console.log( pow(chislo, stepen) );
 }
