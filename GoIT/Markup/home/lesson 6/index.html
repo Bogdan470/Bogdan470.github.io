@@ -11,46 +11,44 @@
      <!-- Header -->
         <header class="clearfix">
            <div class="top_row clerfix">
-               <ul class="num_telephone">
-                   <li><img src="image/telephon.png" alt=""></li>
-                   <li>(044)123-45-67  (044)567-89-10 </li>
-               </ul>
-               <ul class="top_form">
-                   <li><img src="image/man.png" alt=""></li>
-                   <li><form action="#">
-                    <input type="text" placeholder="логин" name="Login" >
-                   </form>
-                   </li>
-                   <li><form action="#">
-                       <input type="password" name="Password" placeholder="пароль">
-                   </li>
-                   <li><a href="#">вход</a></li>
-                   <li><a href="#">регистрация</a></li>
-                   <li><a href="#">забыли пароль?</a></li>
-               </ul>
-               <ul class="top_home">
+               <div class="num_telephone">
+                 <img src="image/telephon.png" alt="">
+                 <span>(044)123-45-67  (044)567-89-10</span> 
+               </div>
+               <div class="top_form clerfix">
+                   <img src="image/man.png" alt="">
+                   <form action="#">
+                   <input type="text" placeholder="логин" name="Login" required>
+                   <input type="password" name="Password" placeholder="пароль" required>
+                   <input  type="submit" name="enter" placeholder="вход" value="вход" required>
+                   <a href="#" class="registration">регистрация</a>
+                   <a href="#">забыли пароль?</a>
+                </div>
+                <ul class="top_home">
                    <li><a href="#"><img src="image/home.png" alt="" ></a></li>
                    <li><a href="#"><img src="image/map_site.png" alt="" ></a></li>
                    <li><a href=""><img src="image/mail.png" alt="" ></a></li>
-               </ul>
+                </ul>
            </div>
            <div class="baner">
                <img src="image/baner.png" alt="">
                <a href="#" class="zazor"></a>
            </div>
            <nav class="clearfix">
-                   <ul class="nav_menu">
-                       <li><a href="">О КОМПАНИИ</a></li>
-                       <li><a href="">ОПЛАТА</a></li>
-                       <li><a href="">ДОСТАВКА</a></li>
-                       <li><a href="">СТАТЬИ</a></li>
-                       <li><a href="">КОНТАКТЫ</a></li>                                     </ul>
+           
                    <div class="basket">
                        <p>на сумму: <span class="price">0,00 грн.</span></p>
-                       <p>товаров: <span class="
+                       <p class="psevdo_goods">товаров: <span class="
 goods">0</span></p>
-                       <a href=""><img src="image/basket.png" alt=""></a>
+                      
                    </div>
+                    <ul class="nav_menu">
+                       <li><a href="">КОНТАКТЫ</a></li>  
+                       <li><a href="">СТАТЬИ</a></li>  
+                       <li><a href="">ДОСТАВКА</a></li>
+                       <li><a href="">ОПЛАТА</a></li>
+                       <li><a href="">О КОМПАНИИ</a></li>   
+                    </ul>
            </nav>
         </header>
      <!-- /Header -->
@@ -63,11 +61,10 @@ goods">0</span></p>
             </p>
             <p class="disk_text">Диски</p>
             <div class="left_disk"> 
-               
 <!-- марка авто(диски)-->
         <div class="box"> 
           <div class="left_disk_L">
-                <span class="text_name">Марка</span>
+               <span class="text_name">Марка</span>
                <span class="text_grey">авто:</span>
             </div> 
             <div class="left_disk_R">
@@ -94,7 +91,7 @@ goods">0</span></p>
                     <option value="Matrix">Matrix</option>
                     <option value="Accent">Accent</option>
                     <option value="Sonata">Sonata</option>
-                   </select>
+                </select>
           </div> 
         </div>  
             <!-- /марка автомобиля(диски)-->
@@ -247,7 +244,6 @@ goods">0</span></p>
                   всесез
                   </label></p>
                   </div>
-                  
                 </div>
                <p class="serch_text serch_text_left"><a  href=""><i>Поиск...</i></a></p>
          </div>
@@ -303,7 +299,6 @@ goods">0</span></p>
                 </select>
             </div> 
                     </div>  
-                    
                      <!-- /Диаметр крепежных отверстий -->
                   </div>
                    <div class="find_disk_form_right">
@@ -385,15 +380,15 @@ goods">0</span></p>
 					<p class="wheel-item-name">Goodyear</p>
 					<p class="wheel-model">Ultra Grip Extreme</p>
 					<div class="wheel_photo">
-						<a rel="#"><img src="image/wheel.png" alt=""></a>
-					</div>
+						<a href="#"><img src="image/wheel.png" alt=""></a>
+                 </div>
 					<p class="wheel-cost">90.00 грн.</p>
 				</div>
              <div class="wheel-item">
 					<p class="wheel-item-name">Nokian</p>
 					<p class="wheel-model">Hakkapeliitta R</p>
 					<div class="wheel_photo">
-						<a rel="#"><img src="image/wheel-2.png" height="128" alt=""></a>
+						<a href="#"><img src="image/wheel-2.png" height="128" alt=""></a>
 					</div>
 					<p class="wheel-cost">115.00 грн.</p>
 				</div>
@@ -401,7 +396,7 @@ goods">0</span></p>
 					<p class="wheel-item-name">Hankook</p>
 					<p class="wheel-model">K 708 155/65 R14</p>
 					<div class="wheel_photo">
-						<a rel="#"><img src="image/wheel-3.png" height="128" alt=""></a>
+						<a href="#"><img src="image/wheel-3.png" height="128" alt=""></a>
 					</div>
 					<p class="wheel-cost">393.00 грн.</p>
 				</div>
@@ -411,7 +406,7 @@ goods">0</span></p>
 					<p class="wheel-item-name">Goodyear</p>
 					<p class="wheel-model">Ultra Grip Extreme</p>
 					<div class="wheel_photo">
-						<a rel="#"><img src="image/wheel.png" alt=""></a>
+						<a href="#"><img src="image/wheel.png" alt=""></a>
 					</div>
 					<p class="wheel-cost">90.00 грн.</p>
 				</div>
@@ -419,7 +414,7 @@ goods">0</span></p>
 					<p class="wheel-item-name">Nokian</p>
 					<p class="wheel-model">Hakkapeliitta R</p>
 					<div class="wheel_photo">
-						<a rel="#"><img src="image/wheel-2.png" height="128" alt=""></a>
+						<a href="#"><img src="image/wheel-2.png" height="128" alt=""></a>
 					</div>
 					<p class="wheel-cost">115.00 грн.</p>
 				</div>
@@ -427,7 +422,7 @@ goods">0</span></p>
 					<p class="wheel-item-name">Hankook</p>
 					<p class="wheel-model">K 708 155/65 R14</p>
 					<div class="wheel_photo">
-						<a rel="#"><img src="image/wheel-3.png" height="128" alt=""></a>
+						<a href="#"><img src="image/wheel-3.png" height="128" alt=""></a>
 					</div>
 					<p class="wheel-cost">393.00 грн.</p>
 				</div>
@@ -437,7 +432,7 @@ goods">0</span></p>
 					<p class="wheel-item-name">Goodyear</p>
 					<p class="wheel-model">Ultra Grip Extreme</p>
 					<div class="wheel_photo">
-						<a rel="#"><img src="image/wheel.png" alt=""></a>
+						<a href="#"><img src="image/wheel.png" alt=""></a>
 					</div>
 					<p class="wheel-cost">90.00 грн.</p>
              </div>
@@ -445,7 +440,7 @@ goods">0</span></p>
 					<p class="wheel-item-name">Nokian</p>
 					<p class="wheel-model">Hakkapeliitta R</p>
 					<div class="wheel_photo">
-						<a rel="#"><img src="image/wheel-2.png" height="128" alt=""></a>
+						<a href="#"><img src="image/wheel-2.png" height="128" alt=""></a>
 					</div>
 					<p class="wheel-cost">115.00 грн.</p>
              </div>
@@ -453,7 +448,7 @@ goods">0</span></p>
 					<p class="wheel-item-name">Hankook</p>
 					<p class="wheel-model">K 708 155/65 R14</p>
 					<div class="wheel_photo">
-						<a rel="#"><img src="image/wheel-3.png" height="128" alt=""></a>
+						<a href="#"><img src="image/wheel-3.png" height="128" alt=""></a>
 					</div>
 					<p class="wheel-cost">393.00 грн.</p>
              </div>
@@ -480,14 +475,14 @@ goods">0</span></p>
         </content>
      <!-- /Content -->
      <div class="brand_logo">
-                <img src="image/brand_logo-1.png" alt="">
-                <img src="image/brand_logo-2.png" alt="">
-                <img src="image/brand_logo-3.png" alt="">
-                <img src="image/brand_logo-4.png" alt="">
-                <img src="image/brand_logo-5.png" alt="">
-                <img src="image/brand_logo-6.png" alt="">
-                <img src="image/brand_logo-7.png" alt="">
-                <img src="image/brand_logo-8.png" alt="">
+                <a href="#"><img src="image/brand_logo-1.png" alt=""></a>
+                <a href="#"><img src="image/brand_logo-2.png" alt=""></a>
+                <a href="#"><img src="image/brand_logo-3.png" alt=""></a>
+                <a href="#"><img src="image/brand_logo-4.png" alt=""></a>
+                <a href="#"><img src="image/brand_logo-5.png" alt=""></a>
+                <a href="#"><img src="image/brand_logo-6.png" alt=""></a>
+                <a href="#"><img src="image/brand_logo-7.png" alt=""></a>
+                <a href="#"><img src="image/brand_logo-8.png" alt=""></a>
     </div>
                   <!-- footer -->
                   <footer>
