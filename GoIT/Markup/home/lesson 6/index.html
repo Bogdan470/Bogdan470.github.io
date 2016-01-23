@@ -12,17 +12,16 @@
         <header class="clearfix">
            <div class="top_row clerfix">
                <div class="num_telephone">
-                 <img src="image/telephon.png" alt="">
                  <span>(044)123-45-67  (044)567-89-10</span> 
                </div>
                <div class="top_form clerfix">
-                   <img src="image/man.png" alt="">
-                   <form action="#">
+                   <form action="" class="form_man">
                    <input type="text" placeholder="логин" name="Login" required>
                    <input type="password" name="Password" placeholder="пароль" required>
                    <input  type="submit" name="enter" placeholder="вход" value="вход" required>
                    <a href="#" class="registration">регистрация</a>
                    <a href="#">забыли пароль?</a>
+                   </form>
                 </div>
                 <ul class="top_home">
                    <li><a href="#"><img src="image/home.png" alt="" ></a></li>
@@ -55,6 +54,7 @@ goods">0</span></p>
      
      <!-- find -->
      <div class="find clearfix">
+        <form action="">
          <div class="find_left style_find clearfix">
             <p class="text_find_style_up">
                 Поиск по автомобилю
@@ -198,9 +198,11 @@ goods">0</span></p>
           </div> 
         </div>  
             <!-- /комплектация(шины)-->
-            <p class="serch_text"><a href=""><i>Поиск...</i></a></p>
+            <button class="subm_button_find" type="submit" value="choose" method="post"><i>Поиск...</i></button>
             </div>
          </div>
+         </form>
+         <form action="">
          <div class="find_center style_find">
             <p class="text_find_style_up left_text">поиск шин</p>
             <span class="text_name ">Размер:</span>
@@ -245,8 +247,10 @@ goods">0</span></p>
                   </label></p>
                   </div>
                 </div>
-               <p class="serch_text serch_text_left"><a  href=""><i>Поиск...</i></a></p>
+        <button class="subm_button_find find_disk_center" type="submit" value="choose" method="post"><i>Поиск...</i></button>
          </div>
+         </form>
+         <form action="">
         <div class="find_right style_find">
             <div class="find_disk_form clearfix">
                 <div class="find_disk_form_left">
@@ -339,8 +343,9 @@ goods">0</span></p>
                   <!-- /ЕТ -->
                   </div>
               </div>
-              <p class="serch_text serch_text_right_box serch_text_left right_serch"><a  href=""><i>Поиск...</i></a></p>
+                <button class="subm_button_find find_disk_right" type="submit" value="choose" method="post"><i>Поиск...</i></button>
           </div>
+          </form>
      </div>
      <!-- /find -->
      
@@ -349,22 +354,22 @@ goods">0</span></p>
            <div class="content_full clearfix">
            <!-- left_info -->
             <div class="left_info">
-               <p class="katalog_text"><img src="image/katalog.png" alt="">КАТАЛОГ ПРОДУКЦИИ:</p>
-               <p class="bus"><img src="image/round.png" alt="">ШИНЫ</p>
+               <p class="katalog_text img_catalog">КАТАЛОГ ПРОДУКЦИИ:</p>
+               <p class="bus"><span>ШИНЫ</span></p>
                <ul class="bus_list">
                    <li><a href="#">Наименование 1</a></li>
                    <li><a href="#">Наименование 2</a></li>
                    <li><a href="#">Наименование 3</a></li>
                    <li><a href="#">Наименование 4</a></li>
                </ul>
-               <p class="bus"><img src="image/round.png" alt="">ДИСКИ</p>
+               <p class="bus"><span>ДИСКИ</span></p>
                <ul class="bus_list">
                    <li><a href="#">Наименование 1</a></li>
                    <li><a href="#">Наименование 2</a></li>
                    <li><a href="#">Наименование 3</a></li>
                    <li><a href="#">Наименование 4</a></li>
                </ul>
-               <p class="bus"><img src="image/round.png" alt="">Болты</p>
+               <p class="bus"><span>БОЛТЫ</span></p>
                <ul class="bus_list">
                    <li><a href="#">Наименование 1</a></li>
                    <li><a href="#">Наименование 2</a></li>
@@ -458,16 +463,16 @@ goods">0</span></p>
             <!-- right_info -->
             <div class="right_info">
              <form action="#">
-              <p class="katalog_text"><img src="image/katalog.png" alt="">БРЕНДЫ:</p>
-              <p class="bus"><img src="image/round.png" alt="">ШИНЫ</p>
+              <p class="katalog_text img_catalog">БРЕНДЫ:</p>
+              <p class="bus"><span>ШИНЫ</span></p>
               <p><input type="checkbox" class="check_box" name="checkbox"><label class="text_checkbox" for="идентификатор">Бренд 1</label></p>
               <p><input type="checkbox" class="check_box" name="checkbox"><label class="text_checkbox" for="идентификатор">Бренд 2</label></p>
               <p><input type="checkbox" class="check_box" name="checkbox"><label class="text_checkbox" for="идентификатор">Бренд 3</label></p>
-              <p class="bus"><img src="image/round.png" alt="">ДИСКИ</p>
+              <p class="bus"><span>ДИСКИ</span></p>
               <p><input type="checkbox" class="check_box" name="checkbox"><label class="text_checkbox" for="идентификатор">Бренд 1</label></p>
               <p><input type="checkbox" class="check_box" name="checkbox"><label class="text_checkbox" for="идентификатор">Бренд 2</label></p>
               <p><input type="checkbox" class="check_box" name="checkbox"><label class="text_checkbox" for="идентификатор">Бренд 3</label></p>
-              <button type="submit" value="choose" method="post">ВЫБРАТЬ</button>
+              <button class="subm_button_right_info" type="submit" value="choose" method="post">ВЫБРАТЬ</button>
               </form>
             </div>
             <!-- /right_info -->

@@ -1,0 +1,325 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: Tahoma;
+}
+li{
+    list-style: none;
+}
+/* Jcarusel */
+.jcarousel_wrapper {
+    margin: 20px auto;
+    position: relative;
+    border: 10px solid #fff;
+    width: 600px;
+    height: 400px;
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 0px 20px 2px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 0px 20px 2px rgba(0,0,0,0.75);
+box-shadow: 0px 0px 20px 2px rgba(0,0,0,0.75);
+}
+.jcarousel {
+    position: relative;
+    overflow: hidden;
+}
+.jcarousel ul {
+    width: 10000em;
+    position: relative;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.jcarousel li {
+    float: left;
+}
+img{
+    border-radius: 10px;
+}
+.jcarousel-control-prev,
+.jcarousel-control-next {
+    position: absolute;
+    top: 200px;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    background: #4E443C;
+    color: #fff;
+    text-decoration: none;
+    text-shadow: 0 0 1px #000;
+    font: 24px/27px Arial, sans-serif;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    border-radius: 30px;
+    -webkit-box-shadow: 0 0 2px #999;
+    -moz-box-shadow: 0 0 2px #999;
+    box-shadow: 0 0 2px #999;
+}
+.jcarousel-control-prev {
+    left: -50px;
+}
+.jcarousel-control-next {
+    right: -50px;
+}
+.jcarousel-control-prev:hover span,
+.jcarousel-control-next:hover span {
+    display: block;
+}
+.jcarousel-control-prev.inactive,
+.jcarousel-control-next.inactive {
+    display: none;
+}
+.jcarousel-pagination {
+    position: absolute;
+    bottom: 0;
+    width: 150px;
+    left: 225px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.jcarousel-pagination a {
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    background: #fff;
+    color: #040404;
+    border-radius: 100%;
+    padding: 5px;
+    margin-right: 4px;
+    opacity: .6;
+    border: 1px solid #3d3c3c;
+}
+.jcarousel-pagination a.active {
+    background: #040404;
+    color: #fff;
+    opacity: 1;
+}
+/* /Jcarusel */
+/* DropDown */
+/*
+.dropdown_box_wraper{
+    text-align: center;
+}
+.dropdown{
+    width: 200px;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    
+}
+.dropdown > a{
+    text-decoration: none;
+    color:darkblue;
+    font-size: 18px;
+    font-weight: 600;
+    display: block;
+}
+.dropdown > a:hover{
+    border-radius: 5px;
+    color: black;
+    -webkit-box-shadow: 0px 2px 5px 0px rgba(69,77,230,1);
+-moz-box-shadow: 0px 2px 5px 0px rgba(69,77,230,1);
+box-shadow: 0px 2px 5px 0px rgba(69,77,230,1);
+        transition:all 600ms;
+}
+
+.open > .dropdown-menu {
+  display:block;
+}
+.dropdown li{
+    margin: 5px 0px;
+    font-size: 16px;
+}
+.dropdown-menu_2{
+    
+    position: absolute;
+    position: absolute;
+    top: 0;
+    left: 200px;
+    margin: 0;
+}
+.dropdown-menu li:nth-child(2){
+    position: relative;
+}
+.dropdown li:hover{
+   cursor: pointer;
+    background:blueviolet;
+    color: aliceblue;
+    transition:all 400ms; 
+}
+.dropdown-menu {
+  margin: 0 auto;
+  display: none;
+  width: 140px;
+  background-color: #fff;
+  -webkit-background-clip: padding-box;
+ background-clip: padding-box;
+  border: 1px solid #ccc;
+  border: 1px solid rgba(0, 0, 0, .15);
+  border-radius: 4px;
+  -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+}
+*/
+.dropdown_box_wraper{
+    text-align: center;
+    margin-top: 90px;
+}
+nav ul {
+    list-style-type:none;
+    margin:10px;
+    padding:0;
+}
+nav ul li {
+    display:inline-block;
+    position:relative;
+    color: black;
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+    z-index: 1;
+}
+
+/* sub navigation */
+nav li ul {    
+    position:absolute;
+    left:-10px;
+    top:30px; /* make this equal to the line-height of the links (specified below) */
+    width:184px;
+}
+nav li li {
+    position:relative;
+    margin:0;
+    display:block;
+}
+nav li li ul {
+    position:absolute;
+    top:0;
+    left:184px; /* make this equal to the width of the sub nav above */
+    margin:0;
+}
+
+/* style all links */
+nav a {
+    line-height:40px;
+    padding:0 12px;
+    margin:0 12px;
+    color:dimgray;
+    text-decoration:none;
+    display:block;
+}
+nav li:hover,
+nav li:focus,
+nav li:active {
+    background:#dcdcdc ;
+    color: aliceblue;
+    transition: 1s;
+}
+
+/* style sub level links */
+nav li li a {
+    border-bottom:solid 1px rgb(200,50,50);
+    margin:0 10px;
+    padding:0;
+}
+nav li li:last-child a {
+    border-bottom:none;
+}
+
+/* hide sub menu links */
+ul.sub-menu {
+    display:none;
+}
+
+/* show arrows for dropdowns */
+nav li.dropdown > a {
+    background-image:url('../img/arrow-down_black.png');
+    background-position:right 20px;
+    background-repeat:no-repeat;
+}
+nav li li.dropdown_3 > a,
+nav li li.dropdown_2 > a, 
+nav li li.dropdown > a {
+    background-image:url('../img/arrow-right_black.png');
+    background-position:right 16px;
+    background-repeat:no-repeat;
+}
+
+.backgrond_sub_menu_1 >li{
+    position: relative;
+    background-color: #ccbacb;
+    transition: 1s;
+}
+.backgrond_sub_menu_2 >li{
+    background: #a2bfb2;
+    transition: 1s;
+}
+.backgrond_sub_menu_3 >li{
+    background: #c0dbf0;
+    transition: 1s;
+}
+/*/DropDown*/
+/* Select */
+.select_menu{
+    text-align: center;
+}
+/*/Select */
+
+/* Checkbox */
+.checkbox_wraper{
+    text-align: center;
+    margin-top: 90px;
+}
+.check_css{
+    float: left;
+    margin-left: 300px;
+}
+.check_js{
+    float: right;
+    margin-right: 300px;
+}
+input[type=checkbox] {
+    position: absolute;
+    clip: rect(0, 0, 0, 0);
+    width:37px;
+    height: 37px;
+   
+}
+label {
+    cursor: pointer;
+}
+.css_check_label:after {
+    content: " ";
+    display: inline-block;
+    width:37px;
+    height: 37px;
+    background: url(..//img/checkbox_4.png) no-repeat;
+    position: relative;
+    background-position: -37px 0px;
+    left: 20px;
+    top: 10px;
+}
+input[type=checkbox]:checked + label:after {
+     background: url(..//img/checkbox_4.png) no-repeat;
+background-position: 0px 0px;
+}
+/* /Checkbox */
+/* Checkbox_JS */
+.niceCheck {
+width: 37px;
+height: 37px;
+display: inline-block;
+cursor: pointer;
+background: url(..//img/checkbox_4.png);
+background-position: -37px 0px;
+margin-left: 20px;  
+position: relative;
+top: 10px
+}
+.niceCheck input {
+display: none;
+}
+		
+/* /Checkbox_JS */

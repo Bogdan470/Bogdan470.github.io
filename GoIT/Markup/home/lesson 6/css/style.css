@@ -34,6 +34,7 @@ li{
 }
 .num_telephone{
     float: left;
+    margin-top: -4px
 }
 .num_telephone span{
     font-size: 18px;
@@ -41,16 +42,27 @@ li{
     color: #5e696d;
     line-height: 27px;
 }
-
-.num_telephone img{
-    vertical-align: middle;
+.num_telephone span:before {
+    content: " ";
+    display:inline-block;
+    width:24px;
+    height:24px;
+    background: url(..//image/telephon.png) no-repeat;
+    position: relative;
+    left:-3px;
+    top:8px; 
+    
 }
-.top_form img {
+.form_man:before {
+    content: " ";
+    display:inline-block;
+    width:24px;
+    height:18px;
+    background: url(..//image/man.png) no-repeat;
+    position: relative;
+    left:5px;
+    top:5px; 
     float: left;
-    font-size: 0;
-	line-height: 0;
-    margin: 5px 4px 0px 2px;
-    margin-left: 5px;
 }
 .top_form input:nth-child(1),
 .top_form input:nth-child(2){
@@ -110,12 +122,6 @@ box-shadow: 0px 5px 13px -1px rgba(0,0,0,0.75);
     background: -ms-linear-gradient(top, rgba(31,102,133,1) 0%, rgba(13,54,90,1) 100%);
     background: linear-gradient(to bottom, rgba(31,102,133,1) 0%, rgba(13,54,90,1) 100%);
 }
-
-
-.top_form img{
-    vertical-align: middle;
-}
-
 .registration:before {
     content: "";
 	display: inline-block;
@@ -330,21 +336,24 @@ left_disk_R{
 }
 .find_center{
     float: left;
-    width: 166px;
+    width: 172px;
     padding: 6px 10px 6px 10px;
     margin-left: 16px;
 }
 .find_right{
     float: right;
     width: 236px;
-    padding: 8px 20px 11px 10px;
+    padding: 8px 20px 4px 10px;
     margin-left: 10px;
 }
-.serch_text a{
+.subm_button_find{
     font-size: 14px;
     color: #154467;
     margin-left: 125px;
-    text-decoration: underline;  
+    text-decoration: underline;
+    background: none;
+    border: none;
+    cursor: pointer;
 }
 .left_text{
     text-align: left;
@@ -382,8 +391,10 @@ left_disk_R{
 .right_name_checkbox input{
     vertical-align: middle;
 }
-.serch_text_left a{
-    margin-left: 105px;
+.find_disk_center{
+   position: relative;
+   left: -10px;
+   top: 2px
 }
 /* find disk right */
 .find_disk_form{
@@ -418,12 +429,10 @@ left_disk_R{
     position: absolute;
     left: 155px;
 }
-.right_serch{
-    margin-left: 78px;
-}
-.find_right .serch_text_right_box{
-    line-height: 3px;
-    margin-bottom:6px;
+.find_disk_right{
+    float: right;
+    position: relative;
+    top: -4px;
 }
 /* /find disk right */
 
@@ -476,13 +485,36 @@ left_disk_R{
     padding-left: 2px;
     padding-right: 4px;
 }
+.img_catalog:before {
+   content: " ";
+    display:inline-block;
+    width:26px;
+    height:21px;
+    background: url(..//image/katalog.png) no-repeat;
+    position: relative;
+    left:2px;
+    top:4px; 
+}
+.bus:before {
+   content: " ";
+    display:inline-block;
+    width:27px;
+    height:23px;
+    background: url(..//image/round.png) no-repeat;
+    position: relative;
+    left:3px;
+    top:2px; 
+}
 .bus{
     font-size: 13px;
-    line-height: 22px;
     border: 1px solid #8c969a;
     border-radius: 15px;
     width: 148px;
     margin: 15px 0px 0px 4px;
+}
+.bus span{
+    position: relative;
+    top: -3px;
 }
 .bus_list li a{
     color:#465961;
@@ -528,7 +560,7 @@ left_disk_R{
 .text_checkbox{
     vertical-align:middle;
 }
-button{
+.subm_button_right_info{
     line-height: 25px;
     padding: 0px 14px;
     border-radius:15px;
