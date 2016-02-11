@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <script src="js/jquery-1.12.0.min.js" type="text/jscript"></script>
+     <script src="js/tmpl.js" type="text/jscript"></script>
+    <script src="js/script.js" type="text/jscript"></script>
+</head>
+<body>
+<script type="text/template" id="my_page">
+ <div class="wrapper">
+  <div class="line">
+        <h3><%= name_foto %></h3>
+        <div class="my_foto"><img src="<%= image_foto_url %>" alt="<%= img_alt %>" title="<%= img_title %>">
+        </div>
+        <p><%= proffesion %></p>
+    </div>
+        <p><%= want_job  %></p>
+    <div class="line">
+        <ul>
+            <li><%= would_1 %></li>
+            <li><%= would_2 %></li>
+            <li><%= would_3 %></li>
+            <li><%= would_4 %></li> 
+        </ul>
+    </div>
+    <div class="line">
+        <p><%= my_tel 
+         <span><%= my_number_tel %></span>
+        %></p>
+        <p><%= text_prof_vkontakte
+       <span><a href="<%= prof_vkontakte %>" target="_blank>"><%= text_prof_vkontakte %></a></span> %></p>
+    </div>
+        <p><%= my_feedback  
+       <span><%= text_my_feedback %></span> %></p>
+
+                
+ </div>
+</script>
+</body>
+</html>
