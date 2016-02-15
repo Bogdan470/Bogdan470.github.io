@@ -17,6 +17,7 @@ body{
 }
 span{
     display: block;
+    margin:-15px 0px 15px 10px;
 }
 .line{
     border-bottom: 1.5px solid #7a7a7a;
