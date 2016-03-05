@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <script src="js/jquery-1.12.0.min.js" type="text/jscript"></script>
+     <script src="js/easing_plugin.js" type="text/jscript"></script>
+     <script src="js/tmpl.js" type="text/jscript"></script>
+     
+    <script src="js/script.js" type="text/jscript"></script>
+</head>
+<body>
+<div class="wraper">
+   <h2>Тест по программированию</h2>
+<form class= "form_quest" id="form_id">
+<script type="text/template" id="my_page">
+ <% for ( var i = 0; i < data.length; i++) { %>
+ <h3> <%= data[i].title %> </h3>
+  <div class="form-group">
+                    <label><input type="checkbox" id="<%= i+1 %>"><%= data[i].answers[0].answer %></label>
+                    <label><input type="checkbox" id="<%= i+1 %>"><%= data[i].answers[1].answer %></label>
+                    <label><input type="checkbox" id="<%= i+1 %>"><%= data[i].answers[2].answer %></label>
+                </div>
+                <% } %>
+</script>
+<input type="submit" value="Проверить тест" id="go">
+</form>
+</div>
+<div id="modal_form">
+      <span id="modal_close">X</span>
+     
+</div>
+<div id="overlay"></div>
+
+</body>
+</html>
