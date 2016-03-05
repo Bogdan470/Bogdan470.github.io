@@ -127,7 +127,7 @@ var checkResults = function(e) {
   var testOK= false;
   var testPassed = function () {
     passed = answered /questionsQuantity;
-    if ( passed > 0.5 ) {
+    if ( passed === 1) {
     testOK = true;
     }
   };
