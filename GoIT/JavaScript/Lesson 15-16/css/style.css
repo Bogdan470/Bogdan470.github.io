@@ -1,0 +1,86 @@
+*{
+margin: 0;
+padding: 0;
+}
+body{
+     font-family: Tahoma;
+}
+.wrapper{
+    width: 800px;
+    margin: 10px auto;
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(77,5,77,1);
+-moz-box-shadow: 0px 0px 5px 0px rgba(77,5,77,1);
+box-shadow: 0px 0px 5px 0px rgba(77,5,77,1);
+    padding: 10px 50px;
+    border-radius: 5px
+}
+.searchForm{
+    margin: 30px 0;
+    padding: 10px;
+}
+#textForSearch{
+   width: 80%;
+   padding: 10px;
+   font-size: 20px;
+      border: 2px solid  #226264;
+    
+}
+#buttonSearch{
+    width: 15%;
+    float: right;
+    
+    color: white;
+    background-color: #226264;
+    border: 2px solid red;
+    border-radius:5px;
+    padding: 10px;
+    font-size: 20px;
+}
+#buttonSearch:hover{
+    transition: 2s;
+    background-color: #400769;
+}
+ul {
+    margin: 0 5px;
+}
+
+li {
+    display: block;
+    margin-bottom: 20px;
+}
+
+a {
+    color: #920b9e;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:visited {
+    color: #660099;
+}
+
+.visibleURL {
+    color: red;
+}
+
+.content {
+    color: #545454;
+}
+
+.otherResults {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.otherResults-list a {
+    padding: 0 6px;
+}
+
+.active {
+    color: white;
+    background-color: #b000fa;
+    border-radius: 10px;
+}
