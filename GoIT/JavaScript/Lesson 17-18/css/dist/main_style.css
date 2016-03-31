@@ -1,0 +1,25 @@
+.wraper{
+    font-size: 34px;
+    font-family: Tahoma, Arial;
+}
+p{
+    margin-top: 130px;
+}
+*{
+margin: 0;
+padding: 0;
+}
+.wraper{
+    width: 960px;
+    margin: 0 auto;
+}
+p{
+    color: cadetblue;
+    text-align: center;
+}
+p span{
+    color: darkmagenta;
+}
+p:first-letter{
+    color: red;
+}
