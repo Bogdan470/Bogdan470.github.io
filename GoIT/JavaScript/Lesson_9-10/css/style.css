@@ -95,81 +95,16 @@ img{
     color: #fff;
     opacity: 1;
 }
-/* /Jcarusel */
-/* DropDown */
-/*
-.dropdown_box_wraper{
-    text-align: center;
-}
-.dropdown{
-    width: 200px;
-    display: block;
-    margin: 0 auto;
-    text-align: center;
-    
-}
-.dropdown > a{
-    text-decoration: none;
-    color:darkblue;
-    font-size: 18px;
-    font-weight: 600;
-    display: block;
-}
-.dropdown > a:hover{
-    border-radius: 5px;
-    color: black;
-    -webkit-box-shadow: 0px 2px 5px 0px rgba(69,77,230,1);
--moz-box-shadow: 0px 2px 5px 0px rgba(69,77,230,1);
-box-shadow: 0px 2px 5px 0px rgba(69,77,230,1);
-        transition:all 600ms;
-}
 
-.open > .dropdown-menu {
-  display:block;
-}
-.dropdown li{
-    margin: 5px 0px;
-    font-size: 16px;
-}
-.dropdown-menu_2{
-    
-    position: absolute;
-    position: absolute;
-    top: 0;
-    left: 200px;
-    margin: 0;
-}
-.dropdown-menu li:nth-child(2){
-    position: relative;
-}
-.dropdown li:hover{
-   cursor: pointer;
-    background:blueviolet;
-    color: aliceblue;
-    transition:all 400ms; 
-}
-.dropdown-menu {
-  margin: 0 auto;
-  display: none;
-  width: 140px;
-  background-color: #fff;
-  -webkit-background-clip: padding-box;
- background-clip: padding-box;
-  border: 1px solid #ccc;
-  border: 1px solid rgba(0, 0, 0, .15);
-  border-radius: 4px;
-  -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
-  box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
-}
-*/
 .dropdown_box_wraper{
     text-align: center;
     margin-top: 90px;
+    width: 100%;
 }
 nav ul {
     list-style-type:none;
     margin:10px;
-    padding:0;
+    
 }
 nav ul li {
     display:inline-block;
@@ -245,6 +180,7 @@ nav li li.dropdown > a {
     background-image:url('../img/arrow-right_black.png');
     background-position:right 16px;
     background-repeat:no-repeat;
+    
 }
 
 .backgrond_sub_menu_1 >li{
@@ -270,7 +206,7 @@ nav li li.dropdown > a {
 /* Checkbox */
 .checkbox_wraper{
     text-align: center;
-    margin-top: 90px;
+    margin-top: 150px;
 }
 .check_css{
     float: left;

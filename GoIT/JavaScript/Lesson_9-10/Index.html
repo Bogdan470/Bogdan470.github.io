@@ -3,13 +3,11 @@
     <head>
         <meta charset="utf-8">
         <title>Carousel</title>
-        <link rel="stylesheet" href="cusel/css/cusel.css" type="text/css">
+        <link rel="stylesheet" type="text/css" href="css/jquery.selectbox.css">
         <link rel="stylesheet" type="text/css" href="css/style.css">
         <script src="js/jquery-1.12.0.min.js" type="text/jscript"></script>
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jcarousel/0.3.4/jquery.jcarousel.min.js"></script>
-        <script src="cusel/js/cusel.js" type="text/jscript"></script>
-        <script src="cusel/js/jScrollPane.js" type="text/jscript"></script>
-        <script src="cusel/js/jquery.mousewheel.js" type="text/jscript"></script>
+        <script src="js/jquery.selectbox-0.2.js" type="text/jscript"></script>
 <script src="js/jquery.color.js" type="text/javascript"></script>
         <script src="js/script.js" type="text/jscript"></script>
     </head>
@@ -30,32 +28,30 @@
                  <p class="jcarousel-pagination"></p>
             </div>   
             
+
             <div class="select_menu">
-              <h2 class="demoHeaders">Selectmenu</h2>
-               <div class="main">
-                <form action="#">
-        <div class="lineForm">
+            <select  name="country_id" id="country_id" tabindex="1">
+		<option value="">-- Select country --</option>
+		<optgroup label="North America">
+			<option value="1">USA</option>
+			<option value="9">Canada</option>
+		</optgroup>
+		<optgroup label="Europe">
+			<option value="2">France</option>
+			<option value="3">Spain</option>
+			<option value="6">Bulgaria</option>
+			<option value="7" disabled="disabled">Greece</option>
+			<option value="8">Italy</option>
+		</optgroup>
+		<optgroup label="Asia" disabled="disabled">
+			<option value="5">Japan</option>
+			<option value="11">China</option>
+		</optgroup>
+		<option value="4">Brazil</option>
+		<option value="10">South Africa</option>
+	</select>
+          </div> 
            
-            <select class="sel80" id="country" name="country" tabindex="2">
-            <option value="1">Украина</option>
-            <option value="2">Канада</option>
-            <option value="3">Чехия</option>
-            <option value="4">Словакия</option>
-            <option value="5">Румыния</option>
-            <option value="6">Болгария</option>
-            <option value="7">Польша</option>
-            <option value="8">Германия</option>
-            <option value="9">Франция</option>
-            <option value="10">Англия</option>
-            <option value="11">Испания</option>
-           
-            <option selected="selected" value="1000">Выберите страну...</option>
-            </select>
-            
-        </div>
-</form>
-</div>
-            </div>  
             <div class="dropdown_box_wraper">
     <nav>
     <ul class="content clearfix">

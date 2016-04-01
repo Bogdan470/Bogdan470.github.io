@@ -1,3 +1,4 @@
+
 // Карусель
 (function($) {
     $(function() {
@@ -51,6 +52,7 @@
      $(document).ready(function() {
         $( '.dropdown' ).hover(
             function(){
+                $(this).find('.sub-menu').stop(true, true);
                 $(this).children('.sub-menu').slideDown(500);
                 $('.backgrond_sub_menu_1 > li').animate({backgroundColor: "#abcdef"}, 1000);
                 $('.backgrond_sub_menu_1 > li').mouseover(
@@ -108,14 +110,11 @@
     });
     // /Выпадающее меню
     
-    // Селект Cusel
+    // Селект 
   $(document).ready(function(){
-    var params = {
-            changedEl: ".lineForm select",
-            visRows: 4,
-            scrollArrows: true
-        }
-        cuSel(params);
+    $(function () {
+        $("#country_id").selectbox();
+    });
     }); 
     
     // Checkbox_js
