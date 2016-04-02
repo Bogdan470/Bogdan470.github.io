@@ -1,0 +1,71 @@
+/*------------------------------------*\
+-------- DEMO Code: accordion
+\*------------------------------------*/
+/*----- Accordion -----*/
+.accordion, .accordion * {
+	-webkit-box-sizing:border-box; 
+	-moz-box-sizing:border-box; 
+	box-sizing:border-box;
+}
+
+.accordion {
+	overflow:hidden;
+}
+
+/*----- Section Titles -----*/
+
+.accordion-section-title {
+	width:100%;
+	position: relative;
+	/*padding:15px;*/
+	padding-left: 50px;
+	margin-bottom: 5px;
+	line-height: 40px;
+	display:inline-block;
+	/*border-bottom:1px solid #1a1a1a;*/
+	/*background: #f4b60d;*/
+	background: #fff;
+	border: 1px solid #e8e8e8;
+	transition:all linear 0.15s;
+	/* Type */
+	font-size:13px;
+	text-transform: uppercase;
+	text-decoration: none;
+	color:#434343;
+}
+
+.accordion-section-title:before {
+	content: '+';
+	display: block;
+	position: absolute;
+	width: 39px;
+	height: 40px;
+	left: 0px;
+	text-align: center;
+	line-height: 40px;
+	font-size: 20px;
+	border-right: 1px solid #e8e8e8;
+
+}
+
+.accordion-section-title.active, .accordion-section-title:hover {
+	background: #f4b60d;
+	color: #fff;
+}
+
+.accordion-section-title.active:before {
+	content: '-';
+}
+
+.accordion-section:last-child .accordion-section-title {
+	/*border-bottom:none;*/
+}
+
+/*----- Section Content -----*/
+.accordion-section-content {
+	padding:20px 5px 35px 40px;
+	display:none;
+	font: 13px arial, sans-serif;
+	line-height: 20px;
+	color: #8a8a8a;
+}
