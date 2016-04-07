@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lessons 23_24</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script data-main="js/app" src="js/require.js"></script>
+</head>
+<body>
+   <script type="text/template" id="wrapper-template">
+	<div class="wrapper">
+		
+		<div class="controlls">
+			<input type="text" class="item-value" placeholder="Write your next task">
+			<button class="item-add" type="submit"></button>
+		</div>
+        <ul class="item-list"></ul>
+	</div>
+</script>
+
+	<script type="text/template" id="list-template">
+		<% for(var i = 0; i < data.length; i++) { %>
+			<li> <input class="item-input" type="text" name="" value=<%= data[i] %>> 
+            <span class="item-edit"></span>
+				<span class="item-delete" data-value="<%= data[i] %>"></span>
+				
+			</li>
+		<% }; %>
+	</script>
+	
+    
+</body>
+</html>
